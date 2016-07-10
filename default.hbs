@@ -83,9 +83,9 @@
                         <h3><i class="fa fa-hashtag" aria-hidden="true"></i> Tags</h3>
                         <ul>
                             {{#get "tags" limit="all" include="count.posts" order="count.posts desc"}}
-                            {{#foreach tags}}
-                            <li><a href="/tag/{{slug}}" title="{{name}}">{{name}}</a></li>
-                            {{/foreach}}
+                                {{#foreach tags}}
+                                    <li><a href="{{url}}" title="{{name}}">{{name}}</a></li>
+                                {{/foreach}}
                             {{/get}}
                         </ul>
                     </div>
@@ -97,10 +97,8 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="left">
-                        <a href="http://creativecommons.org/licenses/by-sa/4.0/">
-                              Creative Commons BY-SA 4.0
-                        </a> - 2016
+                    <div class="left copy">
+                        &copy; Paul Hoffer - 2016
                     </div>
                     <div class="right">Powered by <a href="https://ghost.org/">Ghost</a>
                     <span>Theme <a href="https://github.com/SuphanutJui/Material-Sidenav-Ghost-Theme">Material Sidenav</a></span>

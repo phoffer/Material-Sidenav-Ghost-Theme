@@ -15,12 +15,14 @@
         <main class="row">
            
             <article class="front-wrapper col-md-8 col-md-offset-2 jumbotron animated" role="article">
-                       
-                <div class="cover-area"> {{!cover image}}
-                    <div class="cover-img">
-                        <a href="{{url}}"><img src="{{image}}"></a>
+                {{#if image}}
+
+                    <div class="cover-area"> {{!cover image}}
+                        <div class="cover-img">
+                            <a href="{{url}}"><img src="{{image}}"></a>
+                        </div>
                     </div>
-                </div>
+                {{/if}}
                 
                 <div class="front-post">
                     <div class="container-fluid">
@@ -29,18 +31,7 @@
                             <div class="front-post-content">
                                 <div class="front-post-wrapper">
                                     <div class="front-post-header">
-                                        <div class="front-post-meta"> {{!post meta}}
-                                            <div class="front-post-tag">
-                                                <i class="fa fa-hashtag" aria-hidden="true"></i>
-                                                {{#foreach tags}}
-                                                <a href="{{url}}" title="{{name}}">{{name}}</a>
-                                                {{/foreach}}
-                                            </div>
-                                            {{!time}}
-                                            <time class="front-post-date" datetime="{{date format='YYYY-MM-DD'}}"><i class="material-icons">&#xE192;</i> 
-                                            {{date format='YYYY-MM-DD'}}
-                                            </time>
-                                        </div>
+                                        {{> post_meta}}
                                         <h2 class="front-post-title" itemprop="headline">
                                             <a href="{{url}}">{{title}}</a>
                                         </h2>

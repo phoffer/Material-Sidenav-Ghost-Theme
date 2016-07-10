@@ -1,3 +1,99 @@
+/* COLORS
+
+default:
+    navbar: #263238;
+        p: #CFD8DC;
+        a:hover: #455A64;
+
+
+.navmenu {
+    background-color: #263238;
+}
+
+.navmenu p {
+    color: #CFD8DC;
+}
+
+.navmenu-nav .btn:not(.btn-raised):hover {
+    background-color: #455A64;
+}
+
+
+.navbar, .navbar.navbar-default {
+    background-color: #263238;
+}
+
+.front-post-tag a {
+    color: #727272;
+}
+
+.front-post-tag a:hover, .front-post-tag a:focus {
+    color: #212121;
+}
+
+.front-post-meta {
+    color: #727272;
+}
+
+.post-tag a {
+    margin-right: 3px;
+    color: #727272;
+}
+
+.post-tag a:hover, .post-tag a:focus {
+    color: #212121;
+}
+
+.post-meta {
+    color: #727272;
+}
+
+.post-tag a {
+    margin-right: 3px;
+    color: #727272;
+}
+
+.post-tag a:hover, .post-tag a:focus {
+    color: #212121;
+}
+
+.post-meta {
+    color: #727272;
+}
+.post-navigation button.btn-fab:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    background-color: #009688!important;
+}
+
+
+
+footer .row:last-child {
+    background: #37474F;
+}
+
+
+footer {
+    color: #fff;
+    margin-top: 50px;
+    padding: 20px 0px 0px;
+    background-color: #455A64;
+}
+
+footer a {
+    color: #90A4AE;
+}
+
+
+tag
+
+.tag-title {
+    background:#263238;
+    height:70px;
+    color:#fff;
+}
+
+*/
+
 @font-face {
     font-family: THSarabun;
     src: url(../fonts/THSarabunNew.ttf);
@@ -80,6 +176,7 @@ blockquote {
     color: #fff;
 }
 
+/* not used */
 .navmenu .btn.btn-fab {
     background-color: #263238;
     box-shadow: none;
@@ -469,3 +566,139 @@ footer .col-md-12 {
     }
 }
 
+/*   mine   */
+
+
+.post-p {
+    font-family: Helvetica;
+}
+.post-p p {
+    font-size: 1.6rem;
+}
+.front-post-p {
+    font-family: Helvetica;
+}
+.front-post-p p {
+    font-size: 1.6rem;
+}
+
+/*https://color.adobe.com/create/color-wheel/*/
+/* red theme */
+
+.navmenu {
+    background-color: #322638; /*purple ish*/
+    background-color: #323826; /*forest green*/
+    background-color: #344F32; /*equal green*/
+    background-color: #45342D; /*equal red*/
+    /*background-color: #4A1F1E; /*new red*/
+    background-color: #515C0C; /*new green*/
+    background-color: #451D1C; /*new red*/
+    background-color: #153045; /*new navy ish blue*/
+    /*background-color: #132533; /*new dark blue*/
+}
+
+.navmenu p {
+    color: #CFD8DC; /*white ish*/
+}
+
+.navmenu-nav .btn:not(.btn-raised):hover {
+    background-color: #517B4F; /*new green*/
+    background-color: #5C1F1D; /*new red*/
+    background-color: #61211F; /*new red*/
+    background-color: #20425C; /*new blue*/
+}
+
+
+.navbar, .navbar.navbar-default {
+    background-color: #153045;
+}
+
+.front-post-tag a {
+    color: #727272; /*gray for tags/timestamp*/
+}
+
+.front-post-tag a:hover, .front-post-tag a:focus { /*tag hover*/
+    color: #212121;
+}
+
+.front-post-meta {
+    color: #727272; /*gray for tags/timestamp*/
+}
+
+.post-tag a {
+    margin-right: 3px;
+    color: #727272; /*gray for tags/timestamp*/
+}
+
+.post-tag a:hover, .post-tag a:focus {
+    color: #212121;
+}
+
+.post-meta {
+    color: #727272; /*gray for tags/timestamp*/
+}
+
+.post-tag a { /*tags/timestamp*/
+    margin-right: 3px;
+    color: #727272; /*gray for tags/timestamp*/
+}
+
+.post-tag a:hover, .post-tag a:focus {
+    color: #212121;
+}
+
+.post-meta {
+    color: #727272; /*gray for tags/timestamp*/
+}
+a, a:focus, a:hover { /*all links i guess?*/
+    color: #366A91; /*new blue*/
+}
+a:hover { /*all links i guess?*/
+    color: #1A3245; /*new blue*/
+    color: #23455E; /*new blue*/
+}
+.post-navigation button.btn-fab { /*previous/next circle button*/
+    background-color: #366A91!important;
+}
+.post-navigation button.btn-fab:hover { /*previous/next circle button hover*/
+    background-color: #1A3245!important;
+    background-color: #23455E!important;
+}
+
+.front-post-more a.btn-primary { /*read more button*/
+    background-color: #366A91!important;
+    background-color: #366A91!important;
+}
+.front-post-more a.btn-primary:hover { /*read more button*/
+    background-color: #1A3245!important;
+    background-color: #153045!important; /*sidebar color*/
+    background-color: #23455E!important; /*footer color*/
+}
+
+
+footer .row:last-child { /*footer bottom banner*/
+    background: #37474F; /*default*/
+    background: #1A3245; /*new blue*/
+}
+
+
+footer { /* footer area */
+    color: #fff;
+    margin-top: 50px;
+    padding: 20px 0px 0px;
+    background-color: #455A64; /*original*/
+    background-color: #23455E;
+}
+
+footer .copy { /*copyright*/
+    color: #90A4AE;
+}
+
+
+/*tag*/
+
+.tag-title { /*header bar on tag page*/
+    background:#1A3245;
+    height:70px;
+    color:#fff;
+}

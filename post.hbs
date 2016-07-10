@@ -25,20 +25,7 @@
                                 <div class="post-content">
                                     <div class="post-wrapper">
                                         <div class="post-header">
-                                            <div class="post-meta">
-                                                <div class="post-tag">
-                                                    {{#if tags}}
-                                                        <i class="fa fa-hashtag" aria-hidden="true"></i>
-                                                        {{#foreach tags}}
-                                                        <a href="{{url}}" title="{{name}}">{{name}}</a>
-                                                        {{/foreach}}
-                                                    {{/if}}
-                                                </div>
-                                                <time class="front-post-date" datetime="{{date format='YYYY-MM-DD'}}">
-                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                                    {{date format='YYYY-MM-DD'}}
-                                                </time>
-                                            </div>
+                                            {{> post_meta}}
                                         </div>
                                         <div class="post-p">
                                             {{content}}
@@ -46,15 +33,15 @@
                                         <hr>
                                         <div class="post-share btn-group-sm">
                                             <h3><i class="material-icons">share</i> Share this:</h3>
-                                            <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" class="btn btn-default btn-fab fb intent" data-width="580" height="235">
+                                            <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="false"}}" class="btn btn-default btn-fab fb intent" data-width="580" height="235">
                                                 <i class="fa fa-facebook" aria-hidden="true"></i>
                                                 <div class="ripple-container"></div>
                                             </a>
-                                            <a href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}" class="btn btn-default btn-fab tw intent" data-width="550" data-height="235">
+                                            <a href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="false"}}" class="btn btn-default btn-fab tw intent" data-width="550" data-height="235">
                                                 <i class="fa fa-twitter" aria-hidden="true"></i>
                                                 <div class="ripple-container"></div>
                                             </a>
-                                            <a href="https://plus.google.com/share?url={{url absolute="true"}}" class="btn btn-default btn-fab gp intent" data-width="590" data-height="530">
+                                            <a href="https://plus.google.com/share?url={{url absolute="false"}}" class="btn btn-default btn-fab gp intent" data-width="590" data-height="530">
                                                 <i class="fa fa-google-plus" aria-hidden="true"></i>
                                                 <div class="ripple-container"></div>
                                             </a>

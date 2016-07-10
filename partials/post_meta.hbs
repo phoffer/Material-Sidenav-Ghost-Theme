@@ -1,0 +1,17 @@
+{{!post meta (time posted, tags)}}
+<div class="front-post-meta">
+    <div class="front-post-tag">
+        {{#if tags}}
+           {{!hashtag icon}}
+            <i class="fa fa-hashtag" aria-hidden="true"></i>
+            {{!foreach tags}}
+            {{#foreach tags}}
+            <a href="{{url}}" title="{{name}}">{{name}}</a>
+            {{/foreach}}
+        {{/if}}
+    </div>
+    <time class="front-post-date" datetime="{{date format='YYYY-MM-DD'}}">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+        {{date format='YYYY-MM-DD'}}
+    </time>
+</div>
