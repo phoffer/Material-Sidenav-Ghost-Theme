@@ -1,0 +1,13 @@
+<ul class="nav navmenu-nav">
+  {{#foreach navigation}}
+    <li class="btn {{#if current}}current{{/if}} navigation-slug-{{slug}}">
+      {{#if false}}
+        <i class="material-icons">home</i>
+      {{/if}}
+      <a href="{{url}}">
+        {{label}}
+      </a>
+    </li>
+  {{/foreach}}
+</ul>
+{{> sidebar}}

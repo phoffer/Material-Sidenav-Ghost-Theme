@@ -8,11 +8,13 @@
         <article class="front-wrapper col-md-8 col-md-offset-2 jumbotron animated" role="article">
           
            {{!Cover Image}}
-            <div class="cover-area">
-                <div class="cover-img">
-                    <a href="{{url}}"><img src="{{image}}"></a>
+            {{#if image}}
+                <div class="cover-area">
+                    <div class="cover-img">
+                        <a href="{{url}}"><img src="{{image}}"></a>
+                    </div>
                 </div>
-            </div>
+            {{/if}}
             <div class="front-post">
                 <div class="container-fluid">
                     <div class="row">
@@ -22,15 +24,17 @@
                                    {{!post meta (time posted, tags)}}
                                     <div class="front-post-meta">
                                         <div class="front-post-tag">
-                                           {{!hashtag icon}}
-                                            <i class="fa fa-hashtag" aria-hidden="true"></i>
-                                            {{!foreach tags}}
-                                            {{#foreach tags}}
-                                            <a href="{{url}}" title="{{name}}">{{name}}</a>
-                                            {{/foreach}}
+                                            {{#if tags}}
+                                               {{!hashtag icon}}
+                                                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                                                {{!foreach tags}}
+                                                {{#foreach tags}}
+                                                <a href="{{url}}" title="{{name}}">{{name}}</a>
+                                                {{/foreach}}
+                                            {{/if}}
                                         </div>
                                         <time class="front-post-date" datetime="{{date format='YYYY-MM-DD'}}">
-                                        <i class="material-icons">&#xE192;</i> 
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
                                         {{date format='YYYY-MM-DD'}}
                                         </time>
                                     </div>
